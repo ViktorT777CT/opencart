@@ -1,0 +1,32 @@
+p{
+    text-align: center;
+    margin-top: revert;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn__active:active{
+    background-color: rgba(253, 236, 234, 0.1);
+    border: 4px solid rgb(244, 67, 54);
+}
+.btn__hover{
+    background-color:  rgba(248, 249, 250);;
+}
+.btn__hover:hover{
+    background-color: rgba(238, 238, 238);
+}
+.header_mobil{
+    display: none;
+}
+@media screen and (max-width:992px) {
+    #top_menu{
+        position: sticky;
+        bottom: 0;
+    }
+    #top_menu-tel{
+        position: sticky;
+        bottom: 0;
+    }
+}
