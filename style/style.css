@@ -3,6 +3,8 @@ p{
     margin-top: revert;
 }
 a{
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: black;
 }
