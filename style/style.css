@@ -17,6 +17,9 @@ a{
 .btn__hover:hover{
     background-color: rgba(238, 238, 238);
 }
+.btn_energi{
+    background-color: rgba(238, 238, 238);
+}
 .header_mobil{
     display: none;
 }
