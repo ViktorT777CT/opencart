@@ -37,6 +37,15 @@ a:hover{
     background-color:rgb(224, 224, 224);
     border: 4px solid rgb(224, 224, 224);
 }
+.btn__slider:hover{
+    border: 4px solid rgb(195, 53, 43);
+    border-radius: 4px;
+}
+.btn__slider:active{
+    border: 4px solid rgb(195, 53, 43);
+    border-radius: 4px;
+    
+}
 .header_mobil{
     display: none;
 }
