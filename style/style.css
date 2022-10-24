@@ -8,19 +8,34 @@ a{
     text-decoration: none;
     color: black;
 }
-
-.btn__active:active{
-    background-color: rgba(253, 236, 234, 0.1);
+a:hover{
+    color: black;
+}
+.btn__hover:focus{
+    background-color: rgba(253, 236, 234);
     border: 4px solid rgb(244, 67, 54);
 }
-.btn__hover{
-    background-color:  rgba(248, 249, 250);;
+.btn__hover:focus > a{
+    color:rgb(244, 67, 54);
 }
-.btn__hover:hover{
-    background-color: rgba(238, 238, 238);
+.btn__hover:active{
+    background-color:rgb(251, 198, 194);
+    border: 4px solid rgb(195, 53, 43);
 }
-.btn_energi{
+.btn__hover:active > a{
+    color:rgb(195, 53, 43);
+}
+.btn__hover, .btn__header, .btn__search{
+    background-color:  rgba(248, 249, 250);
+    border: 4px solid rgba(248, 249, 250);
+}
+.btn__hover:hover, .btn__header:hover, .btn__search:hover{
     background-color: rgba(238, 238, 238);
+    border: 4px solid rgba(238, 238, 238);
+}
+.btn__header:active{
+    background-color:rgb(224, 224, 224);
+    border: 4px solid rgb(224, 224, 224);
 }
 .header_mobil{
     display: none;
