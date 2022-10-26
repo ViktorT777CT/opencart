@@ -1,6 +1,15 @@
 p{
     text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.p_margin-18{
     margin-top: revert;
+    margin-bottom: revert;
+}
+.carusel_m-auto{
+    display: flex;
+    justify-content: center;
 }
 a{
     display: block;
@@ -45,6 +54,27 @@ a:hover{
     border: 4px solid rgb(195, 53, 43);
     border-radius: 4px;
     
+}
+.quantity{
+    background-color:rgb(255, 255, 255);
+    border: 4px solid rgb(248, 249, 250);
+}
+.i__1{
+    font-size: 80px;
+}
+.btn__slider{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.btn__slider-bottom{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.text__left{
+    text-align: left;
 }
 .header_mobil{
     display: none;
