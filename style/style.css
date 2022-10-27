@@ -66,6 +66,8 @@ a:hover{
     height: 300px;
     width: 300px;
     object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn__slider-bottom{
     height: 200px;
@@ -142,8 +144,8 @@ a:hover{
             object-fit: cover;
         }
         .btn__slider-bottom{
-            height: 225px;
-            width: 225px;
+            height: 170px;
+            width: 170px;
             object-fit: cover;
         }
     }
@@ -155,8 +157,8 @@ a:hover{
             object-fit: cover;
         }
         .btn__slider-bottom{
-            height: 275px;
-            width: 275px;
+            height: 205px;
+            width: 205px;
             object-fit: cover;
         }
     }
@@ -167,8 +169,20 @@ a:hover{
             object-fit: cover;
         }
         .btn__slider-bottom{
-            height: 320px;
-            width: 320px;
+            height: 240px;
+            width: 240px;
             object-fit: cover;
+        }
+    }
+    @media (min-width: 993px){
+        .row__lg{
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: calc(-1 * var(--bs-gutter-y));
+                margin-right: calc(-.5 * var(--bs-gutter-x));
+                margin-left: calc(-.5 * var(--bs-gutter-x));
+                width: auto;
         }
     }
