@@ -88,10 +88,14 @@ a:hover{
 .header_mobil{
     display: none;
 }
+.width_100{
+    width: 100%;
+}
 @media screen and (max-width:992px) {
     #top_menu{
         position: sticky;
         bottom: 0;
+        z-index: 10;
     }
     #top_menu-tel{
         position: sticky;
@@ -185,4 +189,9 @@ a:hover{
                 margin-left: calc(-.5 * var(--bs-gutter-x));
                 width: auto;
         }
+    }
+    @media (max-width: 992px){
+        .row__min{
+            display: flex!important;
+    }
     }
