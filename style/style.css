@@ -24,7 +24,7 @@ a:hover{
     background-color: rgba(253, 236, 234);
     border: 4px solid rgb(244, 67, 54);
 }
-.btn__hover:focus > a{
+.btn__hover:focus > a, .btn__hover:focus > p{
     color:rgb(244, 67, 54);
 }
 .btn__hover:active{
