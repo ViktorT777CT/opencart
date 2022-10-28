@@ -244,7 +244,7 @@
                 </div>    
             </div>
             <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="tab-pane fade active show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                     <div id="Indicators_kard" class="carouselExampleIndicators slide carousel-fade container-fluid d-lg-flex" data-bs-ride="true">
                         <div class="carousel-indicators d-lg-none">
                             <button type="button" data-bs-target="#Indicators_kard" data-bs-slide-to="0" class="active bg-danger d-none" aria-current="true" aria-label="Slide 1"></button>
@@ -392,7 +392,7 @@
                         </div>                
                     </div>        
                 </div>
-                <div class="tab-pane fade" id="pills-popular" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="tab-pane fade" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab" tabindex="0">
                     <div id="Indicators_popular" class="carouselExampleIndicators slide carousel-fade container-fluid d-lg-flex" data-bs-ride="true">
                         <div class="carousel-indicators d-lg-none">
                             <button type="button" data-bs-target="#Indicators_popular" data-bs-slide-to="0" class="active bg-danger d-none" aria-current="true" aria-label="Slide 1"></button>
@@ -544,47 +544,67 @@
         </div>
     </section>
     <section>
-        <div class="container-fluid mt-2">
-            <div class="row g-2">
-                <div class="col-6 col-lg-2">
-                    <div class="btn__hover rounded-1 p-1 btn__active">
-                        <a class="text-dark fw-bold" href="#"><p>Пушкина</p></a>
-                    </div>
+        <div class="container-fluid">
+            <div class="row g-2 " id="pills-coordinate" role="tablist">
+                <div class="col-6 col-lg-2 p-lg-2">
+                        <button class="col-12 btn__hover rounded-1 p-1 btn__active active" id="pills-pushkin-coordinate" data-bs-toggle="pill" data-bs-target="#pills-pushkin" type="button" role="coordinate" aria-controls="pills-pushkin" aria-selected="false"><p class="fw-bold">Пушкина</p></button>
                 </div>
-                <div class="col-6 col-lg-2">
-                    <div class="btn__hover rounded-1 p-1 btn__active">
-                        <a class="text-dark fw-bold" href="#"><p>проспект иванова</p></a>
-                    </div>
+                <div class="col-6 col-lg-2 p-lg-2">
+                        <button class="col-12 btn__hover rounded-1 p-1 btn__active" id="pills-street-coordinate" data-bs-toggle="pill" data-bs-target="#pills-street" type="button" role="coordinate" aria-controls="pills-street" aria-selected="true"><p class="fw-bold">Лермонтова</p></button>
                 </div>    
             </div>
-        </div>
-    </section> 
-    <section>
-        <div class="container-fluid mt-2">
-            <div class="row g-2">
-                <div class="col-6 col-lg-2">
-                    <div class="btn__hover rounded-1 p-1 btn__active">     
-                        <p class="text-dark fw-bold m-0">Зал</p>
-                    </div>
+            <div class="tab-content" id="pills-coordinateContent">
+                <div class="tab-pane fade  active show" id="pills-pushkin" role="tabpanel" aria-labelledby="pills-pushkin-tab" tabindex="0">
+                    <div class="row g-2 pt-2 pt-lg-0">
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">     
+                                <p class="text-dark fw-bold m-0">Зал</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">
+                                <p class="text-dark fw-bold m-0">Летник</p>
+                            </div>
+                        </div>    
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">
+                                <p class="text-dark fw-bold m-0">Зимник</p>
+                            </div>
+                        </div>   
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">
+                                <p class="text-dark fw-bold m-0">Сложное слово</p>
+                            </div>
+                        </div>   
+                    </div>     
                 </div>
-                <div class="col-6 col-lg-2">
-                    <div class="btn__hover rounded-1 p-1 btn__active">
-                        <p class="text-dark fw-bold m-0">Летник</p>
-                    </div>
-                </div>    
-                <div class="col-6 col-lg-2">
-                    <div class="btn__hover rounded-1 p-1 btn__active">
-                        <p class="text-dark fw-bold m-0">Зимник</p>
-                    </div>
-                </div>   
-                <div class="col-6 col-lg-2">
-                    <div class="btn__hover rounded-1 p-1 btn__active">
-                        <p class="text-dark fw-bold m-0">Сложное слово</p>
-                    </div>
-                </div>   
+                <div class="tab-pane fade" id="pills-street" role="tabpanel" aria-labelledby="pills-street-tab" tabindex="0">
+                    <div class="row g-2 pt-2  pt-lg-0">
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">     
+                                <p class="text-dark fw-bold m-0">столовая</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">
+                                <p class="text-dark fw-bold m-0">Летник</p>
+                            </div>
+                        </div>    
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">
+                                <p class="text-dark fw-bold m-0">Зимник</p>
+                            </div>
+                        </div>   
+                        <div class="col-3 col-lg-2">
+                            <div class="btn__hover rounded-1 p-1 btn__active">
+                                <p class="text-dark fw-bold m-0">бар</p>
+                            </div>
+                        </div>   
+                    </div>      
+                </div>                             
             </div>
         </div>
-    </section>    
+    </section>  
     <section class="fw-bold mt-2">
         <div class="container-lg">
             <div id="carouselExampleIndicators_1" class="carouselExampleIndicators slide carousel-fade" data-bs-ride="true">
@@ -639,71 +659,76 @@
     <section>
         <div class="container-fluid">
             <a class="text-dark" href="#"><h3 class="text__left">Мероприятия</h3></a>
-            <div class="d-flex justify-content-around">
-                <div class="row g-2">
-                    <div class="col">
-                        <div class="card border border-light border-4">
-                            <div class="border border-light border-4 m-2">
-                                <img src="img/test.jpeg" class="card-img-top" alt="...">
-                            </div>                    
-                            <div class="card-body">
-                                <h5 class="card-title">Детский мастер класс</h5>
-                                <div class="col d-flex justify-content-around mt-1">
-                                    <div class="col bg-light rounded-1 m-1">
-                                        <p class="text-dark fw-bold">12.12.2023</p>
-                                    </div>
-                                    <div class="col btn__hover rounded-1 m-1">
-                                        <a href="" class="text-dark">
-                                            <p class="fw-bold">Подробнее</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-none d-lg-flex">
-                        <div class="card border border-light border-4">
-                            <div class="border border-light border-4 m-2">
-                                <img src="img/test.jpeg" class="card-img-top" alt="...">
-                            </div>                    
-                            <div class="card-body">
-                                <h5 class="card-title">Детский мастер класс</h5>
-                                <div class="col d-flex justify-content-around mt-1">
-                                    <div class="col bg-light rounded-1 m-1">
-                                        <p class="text-dark fw-bold">12.12.2023</p>
-                                    </div>
-                                    <div class="col btn__hover rounded-1 m-1">
-                                        <a href="" class="text-dark">
-                                            <p class="fw-bold">Подробнее</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-none d-lg-flex">
-                        <div class="card border border-light border-4 ">
-                            <div class="border border-light border-4 m-2">
-                                <img src="img/test.jpeg" class="card-img-top" alt="...">
-                            </div>                    
-                            <div class="card-body">
-                                <h5 class="card-title">Детский мастер класс</h5>
-                                <div class="col d-flex justify-content-around mt-1">
-                                    <div class="col bg-light rounded-1 m-1">
-                                        <p class="text-dark fw-bold">12.12.2023</p>
-                                    </div>
-                                    <div class="col btn__hover rounded-1 m-1">
-                                        <a href="" class="text-dark">
-                                            <p class="fw-bold">Подробнее</p>
-                                        </a>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <div id="Indicators_events" class="carouselExampleIndicators slide carousel-fade container-fluid d-lg-flex" data-bs-ride="true">
+                <div class="carousel-indicators d-lg-none">
+                    <button type="button" data-bs-target="#Indicators_events" data-bs-slide-to="0" class="active bg-danger d-none" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#Indicators_events" data-bs-slide-to="1" class="bg-danger d-none" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#Indicators_events" data-bs-slide-to="2" class="bg-danger d-none" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#Indicators_events" data-bs-slide-to="3" class="bg-danger d-none" aria-label="Slide 4"></button>
                 </div>
-            </div>
+                <div class="carousel-inner row__lg ms-lg-auto me-lg-auto pb-5">
+                    <div class="klass active col-lg-4 p-lg-2">
+                        <div class="card border border-light border-4 carusel_m-auto">
+                            <div class="border border-light border-4 m-2">
+                                <img src="img/test.jpeg" class="card-img-top" alt="...">
+                            </div>                    
+                            <div class="card-body">
+                                <h5 class="card-title">Детский мастер класс</h5>
+                                <div class="col d-flex justify-content-around mt-1">
+                                    <div class="col bg-light rounded-1 m-1">
+                                        <p class="text-dark fw-bold">12.12.2023</p>
+                                    </div>
+                                    <div class="col btn__hover rounded-1 m-1">
+                                        <a href="" class="text-dark">
+                                            <p class="fw-bold">Подробнее</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="klass col-lg-4 p-lg-2">
+                        <div class="card border border-light border-4 carusel_m-auto">
+                            <div class="border border-light border-4 m-2">
+                                <img src="img/test.jpeg" class="card-img-top" alt="...">
+                            </div>                    
+                            <div class="card-body">
+                                <h5 class="card-title">Детский мастер класс</h5>
+                                <div class="col d-flex justify-content-around mt-1">
+                                    <div class="col bg-light rounded-1 m-1">
+                                        <p class="text-dark fw-bold">12.12.2023</p>
+                                    </div>
+                                    <div class="col btn__hover rounded-1 m-1">
+                                        <a href="" class="text-dark">
+                                            <p class="fw-bold">Подробнее</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="klass col-lg-4 p-lg-2">
+                        <div class="card border border-light border-4 carusel_m-auto">
+                            <div class="border border-light border-4 m-2">
+                                <img src="img/test.jpeg" class="card-img-top" alt="...">
+                            </div>                    
+                            <div class="card-body">
+                                <h5 class="card-title">Детский мастер класс</h5>
+                                <div class="col d-flex justify-content-around mt-1">
+                                    <div class="col bg-light rounded-1 m-1">
+                                        <p class="text-dark fw-bold">12.12.2023</p>
+                                    </div>
+                                    <div class="col btn__hover rounded-1 m-1">
+                                        <a href="" class="text-dark">
+                                            <p class="fw-bold">Подробнее</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>                
+            </div>        
         </div>
     </section>
     <section>
@@ -865,7 +890,7 @@
                     </div>
                 </div>
                 <div class="col col-lg-9">
-                    <div class="container-fluid">
+                    <div class="container-fluid d-none d-lg-flex">
                         <div class="row g-2">
                             <div class="col-4 p-2">
                                 <div class="">
