@@ -104,14 +104,20 @@ a:hover{
 }
 @media (min-width: 320px) and (max-width: 576px){
     .btn__slider{
-        height: 275px;
-        width: 275px;
+        height: 250px;
+        width: 250px;
         object-fit: cover;
     }
     .btn__slider-bottom{
-        height: 275px;
-        width: 275px;
+        height: 250px;
+        width: 250px;
         object-fit: cover;
+    }
+    .font_mobil{
+        font-size: 12px;
+    }
+    .img-kategori{
+        display: none;
     }
     }
     
@@ -189,9 +195,13 @@ a:hover{
                 margin-left: calc(-.5 * var(--bs-gutter-x));
                 width: auto;
         }
+        
     }
     @media (max-width: 992px){
         .row__min{
             display: flex!important;
+    }
+    .row__none{
+        display: none;
     }
     }
