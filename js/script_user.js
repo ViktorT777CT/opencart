@@ -7,3 +7,28 @@ $(document).ready(function () {
         const carousel = new bootstrap.Carousel('.carouselExampleIndicators')
     }
  });
+
+ $(document).ready(function(){
+    $('.counter_block .minus').on('click', function(){
+    
+    let input = $(this).closest('div').find('input'),
+      value = parseInt(input.val()) - 1;
+      value = value < 1 ? 1 : value;
+
+    console.log(value, input);
+    
+    input.val(value);  
+  });
+});
+
+$(document).ready(function(){
+      $('.counter_block .plus').on('click', function(){
+      
+      let input = $(this).closest('div').find('input'),
+        value = parseInt(input.val()) + 1;
+      
+      console.log(value, input);
+      
+      input.val(value);  
+    });
+  });
