@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
 
 $(document).ready(function(){
-    $(".carousel").swipe( {
+    $(".klass").swipe( {
       swipeLeft: function() {
         $(this).carousel("next");
       },
