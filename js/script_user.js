@@ -16,7 +16,14 @@ $(document).ready(function () {
       value = value < 1 ? 1 : value;
 
     console.log(value, input);
+
+    let price = parseInt($(input).closest('.product_prise').find('.product_prise-in').text());
     
+    $(input)
+        .closest('.product_prise')
+        .find('.product_prise-iner')
+        .text((value * price) + ' ₽');
+
     input.val(value);  
   });
 });
@@ -28,7 +35,25 @@ $(document).ready(function(){
         value = parseInt(input.val()) + 1;
       
       console.log(value, input);
-      
+
+      let price = parseInt($(input).closest('.product_prise').find('.product_prise-in').text());
+    
+    $(input)
+        .closest('.product_prise')
+        .find('.product_prise-iner')
+        .text((value * price) + ' ₽');
+
       input.val(value);  
     });
+
+    $(".carousel").swipe( {
+      swipeLeft: function() {
+        $(this).carousel("next");
+      },
+      swipeRight: function() {
+        $(this).carousel("prev");
+      },
+      allowPageScroll: "vertical"
+    });
   });
+
