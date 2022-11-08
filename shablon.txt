@@ -1,0 +1,22 @@
+product_prise
+
+                        <div class="counter_block quantity d-flex mt-2">
+                            <span class="minus col-2 btn__hover rounded-1 m-1 p-2"><p class="text-dark fw-bold m-0">-</p></span>
+                            <div class="d-block container-fluid">
+                                <input type="text" class=" form-control-plaintext text-center fw-bold pb-0" name="quantity" value="1">
+                                <p class="product_prise-iner"> шт на сумму 1345 ₽</p>
+                            </div>                            
+                            <span class="plus col-2 btn__hover rounded-1 m-1 p-2" data-max="1000"><p class="text-dark fw-bold m-0">+</p></span>
+                        </div>
+                        <div class="col mt-2">
+                            <div class="container-fluid">
+                                <div class="row mt-1">
+                                    <div class="col bg-light border border-4 border-light rounded-1 me-2">
+                                        <p class="text-dark fw-bold product_prise-in">1345 ₽</p>
+                                    </div>
+                                    <div class="col btn__basket rounded-1 ms-2">
+                                        <a href="#" ><p class="fw-bold text-white">В корзину</p> </a>                                            
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>

@@ -1,12 +1,140 @@
 
-$(document).ready(function () {
-    if(window.innerWidth <=  992) {
+$('.owl-carousel1').owlCarousel({
+  loop:true,
+  margin:16,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          loop:false
+      },
+      768:{
+          items:3,
+          nav:false,
+          loop:false
+      },
+      992:{
+          items:4,
+          nav:false,
+          loop:false
+      }
+  }
+})
 
-        $('.carouselExampleIndicators').addClass('carousel')
-        $('.carouselExampleIndicators .carousel-inner .klass').addClass('carousel-item')
-        const carousel = new bootstrap.Carousel('.carouselExampleIndicators')
+$('.owl-carousel2').owlCarousel({
+  loop:true,
+  margin:16,
+  responsiveClass:true,
+  nav:true,
+  dots: false,
+  responsive:{
+      0:{
+          items:1,
+          loop:false
+      },
+      768:{
+        items:2,
+        loop:false
+      },
+      992:{
+          items:3,
+          loop:false
+      },
+      1200:{
+        items:4,
+        loop:false
     }
- });
+  }
+  
+})
+
+$('.owl-carousel3').owlCarousel({
+  loop:true,
+  margin:16,
+  responsiveClass:true,
+  dots: false,
+  responsive:{
+      0:{
+          items:2,
+          nav:false,
+          loop:false
+      },
+      992:{
+          items:6,
+          nav:false,
+          loop:false
+      }
+  }
+  
+})
+$('.owl-carousel4').owlCarousel({
+  loop:true,
+  margin:16,
+  responsiveClass:true,
+  dots: false,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          loop:false
+      },
+      992:{
+          items:3,
+          nav:false,
+          loop:false
+      }
+  }
+  
+})
+$('.owl-carousel5').owlCarousel({
+  loop:true,
+  margin:16,
+  responsiveClass:true,
+  dots: false,
+  responsive:{
+      0:{
+          items:1,
+          nav:false,
+          loop:false
+      },
+      768:{
+        items:3,
+        nav:false,
+        loop:false
+      },
+      992:{
+          items:5,
+          nav:false,
+          loop:false
+      }
+  }
+  
+})
+
+$(document).ready(function () {
+  if(window.innerWidth <=  992) {
+
+    $('#owl-carousel2').owlCarousel({
+      loop:true,
+      margin:8,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              nav:false,
+              loop:false
+          },
+          768:{
+              items:4,
+              nav:false,
+              loop:false
+          }
+      }
+      
+    })
+  }
+});
 
  $(document).ready(function(){
     $('.counter_block .minus').on('click', function(){
@@ -22,7 +150,7 @@ $(document).ready(function () {
     $(input)
         .closest('.product_prise')
         .find('.product_prise-iner')
-        .text((value * price) + ' ₽');
+        .text('шт на сумму ' + (value * price) + ' ₽');
 
     input.val(value);  
   });
@@ -41,19 +169,8 @@ $(document).ready(function(){
     $(input)
         .closest('.product_prise')
         .find('.product_prise-iner')
-        .text((value * price) + ' ₽');
+        .text('шт на сумму ' + (value * price) + ' ₽');
 
       input.val(value);  
     });
-
-    $(".carousel").swipe( {
-      swipeLeft: function() {
-        $(this).carousel("next");
-      },
-      swipeRight: function() {
-        $(this).carousel("prev");
-      },
-      allowPageScroll: "vertical"
-    });
   });
-
