@@ -6,17 +6,14 @@ $('.owl-carousel1').owlCarousel({
   responsive:{
       0:{
           items:1,
-          nav:false,
           loop:false
       },
       768:{
           items:3,
-          nav:false,
           loop:false
       },
       992:{
           items:4,
-          nav:false,
           loop:false
       }
   }
@@ -24,13 +21,16 @@ $('.owl-carousel1').owlCarousel({
 
 $('.owl-carousel2').owlCarousel({
   loop:true,
+  dots:false,
   margin:16,
-  responsiveClass:true,
   nav:true,
-  dots: false,
+  navText:['<i class="bi bi-chevron-double-left"></i>','<i class="bi bi-chevron-double-right"></i>'],
+  navContainerClass:"owl-nav chevron_button",
+  responsiveClass:true,
   responsive:{
       0:{
           items:1,
+          nav:false,
           loop:false
       },
       768:{
@@ -72,6 +72,9 @@ $('.owl-carousel4').owlCarousel({
   loop:true,
   margin:16,
   responsiveClass:true,
+  nav:true,
+  navText:['<i class="bi bi-chevron-double-left"></i>','<i class="bi bi-chevron-double-right"></i>'],
+  navContainerClass:"owl-nav chevron_button",
   dots: false,
   responsive:{
       0:{
@@ -81,7 +84,6 @@ $('.owl-carousel4').owlCarousel({
       },
       992:{
           items:3,
-          nav:false,
           loop:false
       }
   }
@@ -91,6 +93,9 @@ $('.owl-carousel5').owlCarousel({
   loop:true,
   margin:16,
   responsiveClass:true,
+  nav:true,
+  navText:['<i class="bi bi-chevron-double-left"></i>','<i class="bi bi-chevron-double-right"></i>'],
+  navContainerClass:"owl-nav chevron_button",
   dots: false,
   responsive:{
       0:{
@@ -100,41 +105,16 @@ $('.owl-carousel5').owlCarousel({
       },
       768:{
         items:3,
-        nav:false,
         loop:false
       },
       992:{
           items:5,
-          nav:false,
           loop:false
       }
   }
   
 })
 
-$(document).ready(function () {
-  if(window.innerWidth <=  992) {
-
-    $('#owl-carousel2').owlCarousel({
-      loop:true,
-      margin:8,
-      responsiveClass:true,
-      responsive:{
-          0:{
-              items:2,
-              nav:false,
-              loop:false
-          },
-          768:{
-              items:4,
-              nav:false,
-              loop:false
-          }
-      }
-      
-    })
-  }
-});
 
  $(document).ready(function(){
     $('.counter_block .minus').on('click', function(){

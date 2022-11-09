@@ -6,7 +6,7 @@ body{
     height: 18px;
     background-color: rgba(255, 255,255);
     position: relative;
-    z-index: 1100;
+    z-index: 2;
 }
 .cover_top1{
     height: 500px;
@@ -14,12 +14,14 @@ body{
     position: absolute;
     z-index: 1;
 }
-
+.bi-person-fill{
+    font-size: 18px;
+}
 .header_box{
     height: 84px; /* 76 + 8 */
     position: sticky;
     top: -8px; 
-    z-index: 1100;    
+    z-index: 2;    
 }
 .header_box::before,.header_box::after {
     content: '';
@@ -50,9 +52,9 @@ body{
    }
 .input_cearh::placeholder{
     position: absolute;
-    top: 12px; /* adjust icon position */
+    top: 14px; /* adjust icon position */
     left: 10px;
-    background-image: url("/img/search-svgrepo-com.svg"); /* all icons in a single file */
+    background-image: url("../img/search-svgrepo-com.svg"); /* all icons in a single file */
     background-repeat: no-repeat;
     background-size:17px;
     padding-left: 25px;
@@ -85,6 +87,9 @@ a{
 }
 a:hover{
     color: black;
+}
+.btn__hover-mobil:focus>a>i, .btn__hover-mobil:focus>a>p{
+    color:rgb(244, 67, 54);
 }
 .btn__hover:focus{
     background-color: rgba(253, 236, 234);
@@ -188,6 +193,13 @@ a:hover{
     z-index: 5;
     top: 0;
 }
+.position_absolut1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    top: 0;
+}
 .owl-dots{
     margin-top: 16px;
     display: flex;
@@ -224,12 +236,18 @@ a:hover{
     height: 50px;
     width: 50px;
 }
-.minus>img, .plus>img{
+.minus>div{
+    height: 100%;
+}
+.minus>div>img, .plus>div>img{
     align-items: center;
     height: 100%;
 }
 .font_mobil>i{
-    font-size: 22px;
+    font-size: 20px;
+}
+.font_mobil>p{
+    font-size: 14px;
 }
 .stik{
     position: absolute;
@@ -259,10 +277,29 @@ a:hover{
 }
 a[data-fancybox] img {
     cursor: zoom-in;
-  }
-  button.btn_serch-mobil>i{
+}
+button.btn_serch-mobil>i{
     font-size: 36px;
-  }
+}
+.chevron_button{
+    position: absolute;
+    right: -6px;
+    top: -62px;
+}
+.chevron_button>button{
+    margin: 8px;
+}
+.chevron_button>button>i{
+    font-size: 21px;
+    background-color:  rgba(248, 249, 250);
+    border: 4px solid rgba(248, 249, 250);
+    border-radius: 4px;
+    padding: 8px;
+}
+.chevron_button>button>i:hover{
+    background-color: rgba(238, 238, 238);
+    border: 4px solid rgba(238, 238, 238);
+}
 @media screen and (max-width:992px) {
     #top_menu{
         position: sticky;
