@@ -114,6 +114,29 @@ $('.owl-carousel5').owlCarousel({
   }
   
 })
+$(document).ready(function () {
+  if(window.innerWidth <  992) {
+
+    $('.owl-carousel6').owlCarousel({
+      loop:true,
+      margin:8,
+      dots: false,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:3,
+              nav:false,
+              loop:false
+          }
+      }
+      
+    })
+    $('.img-kategori').removeClass( 'img-kategori' ).addClass( "d-none" );
+    $('.btn__hover-m-kat').removeClass( 'btn__hover' ).addClass( "btn__hover-red" );
+  } else {
+    $('.owl-carousel6').removeClass( 'owl-carousel6 owl-carousel' ).addClass( "row" );
+  }
+});
 
 
  $(document).ready(function(){
